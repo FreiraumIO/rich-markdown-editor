@@ -115,7 +115,8 @@ class LinkEditor extends React.Component<Props, State> {
       !isUrl(href) &&
       !href.startsWith("/") &&
       !href.startsWith("#") &&
-      !href.startsWith("mailto:")
+      !href.startsWith("mailto:") &&
+      !href.startsWith("tel:")
     ) {
       href = `https://${href}`;
     }
